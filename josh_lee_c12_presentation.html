@@ -112,7 +112,8 @@ section { padding: 6rem 0; }
 .bullet-list.sm li { font-size: 0.85rem; }
 
 /* ====== FAMILY SECTION ====== */
-.family-section { background: linear-gradient(180deg, var(--white) 0%, #f0f4fa 100%); }
+/* Flow: Hero(dark) → Family → RevTech(dark) → Origin → Values → Financials → Leadership → Org → KeyQ(dark) → Closing(dark) */
+.family-section { background: linear-gradient(180deg, #f4f7fb 0%, var(--white) 40%, #edf1f7 100%); }
 .family-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
 .family-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
 .photo-card { position: relative; overflow: hidden; }
@@ -144,7 +145,7 @@ section { padding: 6rem 0; }
 .mach12-title { font-family: 'Work Sans', sans-serif; font-size: 1.3rem; font-weight: 700; letter-spacing: 0.1em; color: var(--gold); margin-bottom: 0.5rem; }
 
 /* ====== VALUES SECTION ====== */
-.values-section { background: linear-gradient(180deg, var(--navy) 0%, #2C3E54 3%, #eaeff6 8%, var(--cream) 50%, var(--white) 100%); }
+.values-section { background: linear-gradient(180deg, var(--white) 0%, #f4f7fb 40%, var(--white) 100%); }
 .values-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
 .value-card { background: var(--white); padding: 2.5rem; border-bottom: 3px solid transparent; transition: border-color 0.3s, box-shadow 0.3s; position: relative; box-shadow: 0 2px 12px rgba(11,30,61,0.04); }
 .value-card:hover { border-color: var(--gold); box-shadow: 0 8px 30px rgba(11,30,61,0.07); }
@@ -152,7 +153,7 @@ section { padding: 6rem 0; }
 .value-title { font-family: 'Work Sans', sans-serif; font-size: 1rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: var(--navy); margin-bottom: 0.7rem; }
 
 /* ====== FINANCIAL SECTION ====== */
-.financial-section { background: linear-gradient(180deg, var(--white) 0%, #edf2f8 50%, #f0f4fa 100%); }
+.financial-section { background: linear-gradient(180deg, var(--white) 0%, #f4f7fb 50%, #edf1f7 100%); }
 .financial-layout { display: grid; grid-template-columns: 1fr 1.6fr; gap: 4rem; align-items: start; }
 .kpi-card { padding: 1.5rem; background: var(--cream); border-left: 3px solid var(--gold); margin-bottom: 1.2rem; }
 .kpi-year { font-family: 'Work Sans', sans-serif; font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.3rem; }
@@ -172,7 +173,7 @@ section { padding: 6rem 0; }
 .projection-note strong { color: var(--navy); font-weight: 600; }
 
 /* ====== LEADERSHIP SECTION ====== */
-.leadership-section { background: linear-gradient(180deg, #f0f4fa 0%, var(--cream) 50%, #eaeff6 100%); }
+.leadership-section { background: linear-gradient(180deg, #edf1f7 0%, #f4f7fb 50%, #edf1f7 100%); }
 .leadership-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
 .leader-card { background: var(--white); padding: 2.2rem; transition: transform 0.3s, box-shadow 0.3s; position: relative; overflow: hidden; box-shadow: 0 2px 12px rgba(11,30,61,0.05); }
 .leader-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--gold); transform: scaleX(0); transform-origin: left; transition: transform 0.4s ease; }
@@ -383,7 +384,7 @@ footer { background: var(--navy); padding: 1.2rem 1.5rem; display: flex; align-i
           <span class="hero-meta-label">2025 Revenue</span>
         </div>
         <div class="hero-meta-item">
-          <span class="hero-meta-value">27%</span>
+          <span class="hero-meta-value">23%</span>
           <span class="hero-meta-label">Gross Margin</span>
         </div>
         <div class="hero-meta-item">
@@ -574,7 +575,7 @@ footer { background: var(--navy); padding: 1.2rem 1.5rem; display: flex; align-i
 </section>
 
 <!-- FAMILY LEGACY -->
-<section style="background:linear-gradient(180deg, #eaeff6 0%, var(--cream) 40%, var(--white) 100%);padding:5rem 0;" id="legacy">
+<section style="background:linear-gradient(180deg, #edf1f7 0%, var(--cream) 40%, var(--white) 100%);padding:5rem 0;" id="legacy">
   <div class="container">
     <div class="section-eyebrow">Origin Story</div>
     <h2 class="section-title fade-in">Where It <em>All Started</em></h2>
@@ -682,7 +683,7 @@ footer { background: var(--navy); padding: 1.2rem 1.5rem; display: flex; align-i
         <div class="kpi-card" style="border-left-color:var(--gold);background:var(--navy);">
           <div class="kpi-year" style="color:var(--gold-light);">2025</div>
           <div class="kpi-revenue" style="color:var(--gold);">$22M</div>
-          <div class="kpi-margin" style="color:rgba(255,255,255,0.5);">27% gross margin. Best year yet.</div>
+          <div class="kpi-margin" style="color:rgba(255,255,255,0.5);">23% gross margin. Best year yet.</div>
           <div class="kpi-bar-bg" style="background:rgba(255,255,255,0.1);"><div class="kpi-bar-fill" style="width:100%;background:var(--gold);"></div></div>
         </div>
         <div style="margin-top:1.5rem;">
@@ -701,7 +702,7 @@ footer { background: var(--navy); padding: 1.2rem 1.5rem; display: flex; align-i
           <div class="bar-group"><span class="bar-label-top">$7M</span><div class="bar-fill" style="height:31.8%;background:#1C3A5C;"><div class="bar-margin-overlay" style="height:20%;"><span class="bar-margin-label">20%</span></div></div><span class="bar-x-label">2022</span></div>
           <div class="bar-group"><span class="bar-label-top">$15M</span><div class="bar-fill" style="height:68.2%;background:#122647;"><div class="bar-margin-overlay" style="height:22%;"><span class="bar-margin-label">22%</span></div></div><span class="bar-x-label">2023</span></div>
           <div class="bar-group"><span class="bar-label-top">$21M</span><div class="bar-fill" style="height:95.5%;background:#0B1E3D;"><div class="bar-margin-overlay" style="height:23%;"><span class="bar-margin-label">23%</span></div></div><span class="bar-x-label">2024</span></div>
-          <div class="bar-group"><span class="bar-label-top" style="color:var(--gold);">$22M</span><div class="bar-fill" style="height:100%;background:linear-gradient(to top,#C9A84C,#8B6914);"><div class="bar-margin-overlay" style="height:27%;background:rgba(0,0,0,0.2);"><span class="bar-margin-label" style="color:white;">27%</span></div></div><span class="bar-x-label" style="color:var(--gold);">2025</span></div>
+          <div class="bar-group"><span class="bar-label-top" style="color:var(--gold);">$22M</span><div class="bar-fill" style="height:100%;background:linear-gradient(to top,#C9A84C,#8B6914);"><div class="bar-margin-overlay" style="height:23%;background:rgba(0,0,0,0.2);"><span class="bar-margin-label" style="color:white;">23%</span></div></div><span class="bar-x-label" style="color:var(--gold);">2025</span></div>
           <div class="bar-group"><span class="bar-label-top" style="color:var(--text-muted);">$18M</span><div class="bar-fill" style="height:81.8%;background:repeating-linear-gradient(45deg,#e2d8c4,#e2d8c4 4px,#f0ebe0 4px,#f0ebe0 8px);border:1px dashed #9A9488;"><div class="bar-margin-overlay" style="height:25%;background:rgba(154,148,136,0.15);"><span class="bar-margin-label" style="color:#9A9488;">25%</span></div></div><span class="bar-x-label" style="color:var(--text-muted);">2026E</span></div>
         </div>
         <div class="projection-note"><strong>2026 Context:</strong> The large contract concluded at end of 2025. $18M at 25% margin reflects the transition as we build diversified pipeline and launch new product lines. This is a planned reset, not a reversal.</div>
@@ -711,11 +712,11 @@ footer { background: var(--navy); padding: 1.2rem 1.5rem; display: flex; align-i
             <div style="font-size:0.72rem;color:var(--text-muted);margin-top:0.2rem;">Revenue Growth (2021-2025)</div>
           </div>
           <div style="text-align:center;padding:1rem;background:var(--cream);border-radius:4px;">
-            <div style="font-family:'Work Sans',sans-serif;font-size:1.4rem;font-weight:700;color:var(--navy);">+7pp</div>
+            <div style="font-family:'Work Sans',sans-serif;font-size:1.4rem;font-weight:700;color:var(--navy);">+3pp</div>
             <div style="font-size:0.72rem;color:var(--text-muted);margin-top:0.2rem;">Margin Improvement</div>
           </div>
           <div style="text-align:center;padding:1rem;background:var(--cream);border-radius:4px;">
-            <div style="font-family:'Work Sans',sans-serif;font-size:1.4rem;font-weight:700;color:var(--gold);">$5.9M</div>
+            <div style="font-family:'Work Sans',sans-serif;font-size:1.4rem;font-weight:700;color:var(--gold);">$5.1M</div>
             <div style="font-size:0.72rem;color:var(--text-muted);margin-top:0.2rem;">2025 Gross Profit</div>
           </div>
         </div>
@@ -899,7 +900,7 @@ footer { background: var(--navy); padding: 1.2rem 1.5rem; display: flex; align-i
 
 
 <!-- ORG & PEOPLE -->
-<section style="background:linear-gradient(180deg, #eaeff6 0%, var(--white) 40%, #f0f4fa 100%);padding:5rem 0;" id="org">
+<section style="background:linear-gradient(180deg, #edf1f7 0%, var(--white) 40%, #edf1f7 100%);padding:5rem 0;" id="org">
   <div class="container">
     <div class="section-eyebrow">Organizational Health</div>
     <h2 class="section-title fade-in">People, <em>Performance &amp; Pipeline</em></h2>
@@ -984,7 +985,7 @@ footer { background: var(--navy); padding: 1.2rem 1.5rem; display: flex; align-i
 </section>
 
 <!-- KEY QUESTIONS -->
-<section style="background:linear-gradient(180deg, #1a2b42 0%, var(--navy) 40%, #1a2b42 100%);padding:5rem 0;" id="key-questions">
+<section style="background:linear-gradient(180deg, #283a50 0%, var(--navy) 30%, var(--navy) 70%, #1e3048 100%);padding:5rem 0;" id="key-questions">
   <div class="container">
     <div class="section-eyebrow" style="color:var(--gold);">C12 Peer Advisory</div>
     <h2 class="section-title fade-in" style="color:var(--white);">Key Questions <em style="color:var(--gold-light);">for the Group</em></h2>
@@ -1073,7 +1074,7 @@ footer { background: var(--navy); padding: 1.2rem 1.5rem; display: flex; align-i
     <p class="closing-sub">Faith &bull; Family &bull; Mission &bull; Excellence</p>
     <div class="closing-stats">
       <div class="closing-stat"><div class="closing-stat-value">$22M</div><div class="closing-stat-label">2025 Revenue</div></div>
-      <div class="closing-stat"><div class="closing-stat-value">27%</div><div class="closing-stat-label">Gross Margin</div></div>
+      <div class="closing-stat"><div class="closing-stat-value">23%</div><div class="closing-stat-label">Gross Margin</div></div>
       <div class="closing-stat"><div class="closing-stat-value">100%</div><div class="closing-stat-label">U.S. Citizens</div></div>
       <div class="closing-stat"><div class="closing-stat-value">A&D</div><div class="closing-stat-label">Core Market</div></div>
     </div>
